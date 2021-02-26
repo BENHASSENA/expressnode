@@ -1,10 +1,11 @@
 
 const express = require('express');
+const cors = require('cors');
 const router = express.Router();
 const Post = require('../models/Post.model');
 const bodyParser = require('body-parser');
 
-
+router.use(cors());
 router.use(bodyParser.json());
 
 // GET
